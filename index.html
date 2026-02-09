@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mestre da Matemática</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Simple animation for progress bar and feedback */
+        @keyframes countdown {
+          from { width: 100%; }
+          to { width: 0%; }
+        }
+        .timer-bar {
+            animation-name: countdown;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
+        }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-slate-900 text-white antialiased">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
